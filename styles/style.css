@@ -1,25 +1,31 @@
-* {
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-nav.scrolled {
-  background-color: #333; /* Dark background when scrolling */
+  scroll-behavior: smooth;
 }
 
-nav.scrolled a {
-  color: white; /* Ensures text remains visible */
+body,
+html,
+h1,
+h2,
+h3,
+p {
+  font-family: "lato", sans-serif;
 }
-
 
 .navbar {
   height: 3rem;
+  width: 100%;
   display: flex;
   align-items: center;
- position: fixed;
- top: 0;
- left: 0;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(211, 211, 211, 0.5);
 
 }
 
@@ -30,12 +36,13 @@ nav.scrolled a {
 }
 
 
-.bgimg-1 {
+.bgimg_1 {
   background-image: url("../src/5f40bb50-3362-430e-aeb0-b6cd76c334b3.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 98%;
+  width: 100%;
   min-height: 100vh;
   position: relative;
 }
@@ -47,22 +54,17 @@ nav.scrolled a {
 }
 
 .txtcenter {
-  /* position: fixed; */
-  top: 35%;
-  left: 35%;
-  width: 30%;
-  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 400px;
+  height: 50px;
   color: white;
   text-align: center;
   padding-top: 15px;
   letter-spacing: 08px;
-  font-size: 2rem;
-
-
-  background-color: black;
+  background-color: rgb(109, 108, 108);
   position: absolute;
-
-
 }
 
 .center_container {
@@ -71,8 +73,40 @@ nav.scrolled a {
   margin: 0 auto;
 }
 
+
+.skill {
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.skill-name {
+  margin-bottom: 5px;
+}
+
+
+
+/* .progress {
+  height: 100%;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 60%;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+}
+.photography { background-color: #3498db; } Blue */
+
+
+
 .aboutme {
   margin: 50px 10px;
+  opacity: 60%;
 
 }
 
@@ -93,10 +127,12 @@ nav.scrolled a {
 
 .img2_myname {
   font-family: sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding-left: 15%;
-  padding-bottom: 50px;
+  padding-top: 50px;
+
 }
+
 
 .my_Name {
   display: flex;
@@ -105,8 +141,9 @@ nav.scrolled a {
 }
 
 .my_Name>img {
-  width: 50%;
-  height: 400px;
+  width: 400px;
+  height: 300px;
+  margin-top: 50px;
 
 }
 
@@ -115,7 +152,8 @@ nav.scrolled a {
   text-align: center;
   padding-bottom: 50px;
 }
-.reallygood{
+
+.reallygood {
   font-family: sans-serif;
 }
 
@@ -162,20 +200,25 @@ nav.scrolled a {
   font-size: 1.6rem;
 }
 
-.bgimg_2>img {
-  width: 100%;
-  height: 500px;
-  position: relative;
-  padding-bottom: 100px;
-  background-position: center center;
-  background-repeat: no-repeat;
+.bgimg_2 {
+  background-image: url("../src/imag2\(1\).jpg");
+  background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 400px;
+  /* min-height: 100vh; */
+  position: relative;
 }
+
+
 
 .portfolio {
   position: absolute;
   /* top: 40%; */
   left: 35%;
+  bottom: 40%;
   font-size: 2rem;
   margin-top: 300px;
   font-family: sans-serif;
@@ -185,7 +228,7 @@ nav.scrolled a {
 .mywork {
   width: 100%;
   height: 200px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,9 +288,10 @@ nav.scrolled a {
 
 .bgimg_3 {
   background: url("../src/image.jpg");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 300px;
   position: relative;
@@ -255,14 +299,12 @@ nav.scrolled a {
 
 .contact {
   position: absolute;
-  left: 70%;
-  top: 60%;
+  left: 30%;
+  top: 50%;
   font-family: sans-serif;
   font-size: 2rem;
   letter-spacing: 5px;
-}
-.whereWork_container{
-  background-color: pink;
+  color: white;
 
 }
 
@@ -284,18 +326,28 @@ nav.scrolled a {
   font-size: 1.5rem;
 
 }
-.textcenter_2{
+
+.textcenter_2 {
   font-family: sans-serif;
 }
 
 
 
-.imgwithtext {
+/* .imgwithtext {
  display: flex;
  width: 50%;
  height: 500px;
  margin: 0 auto;
   padding: 20px;
+} */
+
+.imgwithtext {
+  display: flex;
+  width: 50%;
+  height: 500px;
+  margin: 0 auto;
+  padding: 20px;
+
 }
 
 .input_img_text>img {
@@ -303,45 +355,47 @@ nav.scrolled a {
   width: 300px;
   height: auto;
   padding: 10px;
- 
+
 }
-.input_assid{
-  font-family:sans-serif;
+
+.input_assid {
+  font-family: sans-serif;
   width: 100%;
   padding-left: 20px;
   line-height: 2rem;
 }
 
-form> input{
+form>input {
   width: 45%;
   height: 40px;
   text-align: center;
   margin-top: 10px;
   margin-left: 10px;
- 
+
 }
 
-.message_buttons{
+.message_buttons {
   width: 130px;
   height: 40px;
   background-color: green;
   color: white;
- margin-right: 30px;
+  margin-right: 30px;
   outline: none;
- float: right;
- cursor: pointer;
+  float: right;
+  cursor: pointer;
 
 }
 
-.message_buttons:hover{
+.message_buttons:hover {
   background-color: black;
   color: white;
   cursor: pointer;
- 
+
 }
+
 /* footer sec */
 
-.footer_sec{
+.footer_sec {
   width: 100%;
   height: 300px;
   background-color: gray;
@@ -352,22 +406,36 @@ form> input{
   gap: 10px;
   color: white;
 }
-.footer_sec:hover{
+
+.footer_sec:hover {
   background-color: lightgray;
   color: black;
 }
-.ft_buttons{
+
+.ft_buttons {
   width: 120px;
   height: 40px;
-
 }
-.ft_buttons:hover{
+
+.ft_buttons>a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+
+.ft_buttons>a:hover {
+  color: white;
+}
+
+
+.ft_buttons:hover {
   background-color: black;
   color: white;
   cursor: pointer;
 }
 
-.social_icon>p >i{
- font-size: 1.6rem;
- cursor: pointer;
+.social_icon>p>i {
+  font-size: 1.6rem;
+  cursor: pointer;
 }
