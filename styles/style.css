@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,6 +16,23 @@ p {
   font-family: "lato", sans-serif;
 }
 
+/* this is pseudo element */
+.para_1::first-letter {
+  font-size: 1.8em;
+  color: black;
+}
+
+.para_1::before {
+  content: "This is before ";
+  color: blue;
+
+}
+
+.para_1::after {
+  content: "this is after ";
+  color: red;
+}
+
 .navbar {
   height: 3rem;
   width: 100%;
@@ -26,6 +42,7 @@ p {
   top: 0;
   left: 0;
   background-color: rgba(211, 211, 211, 0.5);
+  z-index: 1000;
 
 }
 
@@ -33,7 +50,21 @@ p {
   margin: 0px 20px;
   text-decoration: none;
   color: #333;
+  text-align: center;
+  height: 40px;
+  padding-top: 10px;
+
 }
+
+.navbar>a:hover {
+  background-color: rgba(255, 255, 255, 0.705);
+  padding: 10px;
+
+}
+.navbar>a:visited{
+  color: green;
+}
+
 
 
 .bgimg_1 {
@@ -67,10 +98,15 @@ p {
   position: absolute;
 }
 
-.center_container {
-  width: 40%;
-  height: auto;
+#ABOUT {
+  width: 60%;
   margin: 0 auto;
+}
+
+.center_container {
+  width: 100%;
+  height: auto;
+  /* margin: 0 auto; */
 }
 
 
@@ -83,27 +119,6 @@ p {
   margin-bottom: 5px;
 }
 
-
-
-/* .progress {
-  height: 100%;
-  text-align: center;
-  line-height: 20px;
-  color: white;
-  font-weight: bold;
-}
-
-.progress-bar {
-  width: 60%;
-  background-color: #eee;
-  border-radius: 5px;
-  overflow: hidden;
-  height: 20px;
-}
-.photography { background-color: #3498db; } Blue */
-
-
-
 .aboutme {
   margin: 50px 10px;
   opacity: 60%;
@@ -112,17 +127,15 @@ p {
 
 .para_1 {
   text-align: justify;
+  font-family: sans-serif;
+  line-height: 1.8rem;
+  padding-bottom: 50px;
 }
+
 
 .headingaboutme {
   text-align: center;
   line-height: 4rem;
-}
-
-.para_1 {
-  font-family: sans-serif;
-  line-height: 1.8rem;
-  padding-bottom: 50px;
 }
 
 .img2_myname {
@@ -163,7 +176,7 @@ p {
 
 .skills>.file {
   width: 100%;
-  height: 20px;
+  height: 30px;
   background-color: gray;
 
 
@@ -210,6 +223,7 @@ p {
   height: 400px;
   /* min-height: 100vh; */
   position: relative;
+  opacity: 50%;
 }
 
 
@@ -222,7 +236,7 @@ p {
   font-size: 2rem;
   margin-top: 300px;
   font-family: sans-serif;
-  color: white;
+  color: rgb(205, 255, 130);
 }
 
 .mywork {
@@ -271,10 +285,16 @@ p {
 
 }
 
+.imgcolumns>img:hover {
+  opacity: 50%;
+}
+
+
 .loadmore {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 .load_more_button {
@@ -286,6 +306,10 @@ p {
 
 }
 
+.load_more_button:hover {
+  background-color: rgb(170, 163, 163);
+}
+
 .bgimg_3 {
   background: url("../src/image.jpg");
   background-position: center center;
@@ -295,6 +319,7 @@ p {
   width: 100%;
   height: 300px;
   position: relative;
+  opacity: 60%;
 }
 
 .contact {
@@ -331,19 +356,14 @@ p {
   font-family: sans-serif;
 }
 
-
-
-/* .imgwithtext {
- display: flex;
- width: 50%;
- height: 500px;
- margin: 0 auto;
-  padding: 20px;
-} */
+.text_main_container {
+  width: 70%;
+  margin: 0 auto;
+}
 
 .imgwithtext {
   display: flex;
-  width: 50%;
+  width: 100%;
   height: 500px;
   margin: 0 auto;
   padding: 20px;
@@ -371,7 +391,22 @@ form>input {
   text-align: center;
   margin-top: 10px;
   margin-left: 10px;
+  outline: none;
 
+}
+
+/* hover and box shadow */
+form>input:hover{
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.253), 0 4px 10px 0 rgba(0, 0, 0, 0.199);
+
+}
+
+
+/* this is pseudo element */
+
+input::placeholder {
+  color: rgb(128, 128, 128);
+  font-style: italic;
 }
 
 .message_buttons {
@@ -421,6 +456,8 @@ form>input {
   text-decoration: none;
   color: black;
   cursor: pointer;
+  font-size: 1rem;
+
 }
 
 
