@@ -33,6 +33,7 @@ p {
   color: red;
 }
 
+/* nav bar custo */
 .navbar {
   height: 3rem;
   width: 100%;
@@ -66,7 +67,7 @@ p {
 }
 
 
-
+/* insert bg image 1 */
 .bgimg_1 {
   background-image: url("../src/5f40bb50-3362-430e-aeb0-b6cd76c334b3.jpg");
   background-attachment: fixed;
@@ -84,6 +85,7 @@ p {
 
 }
 
+/* bg image text positioning */
 .txtcenter {
   position: absolute;
   top: 50%;
@@ -98,6 +100,8 @@ p {
   position: absolute;
 }
 
+
+/* about section  */
 #ABOUT {
   width: 60%;
   margin: 0 auto;
@@ -174,6 +178,7 @@ p {
   letter-spacing: 10px;
 }
 
+/* projects skills */
 .skills>.file {
   width: 100%;
   height: 30px;
@@ -211,6 +216,7 @@ p {
   text-align: center;
 }
 
+/* skills columns */
 .partnar,
 .project,
 .happyclint,
@@ -218,6 +224,7 @@ p {
   font-size: 1.6rem;
 }
 
+/* insert bg image 2 */
 .bgimg_2 {
   background-image: url("../src/imag2\(1\).jpg");
   background-attachment: fixed;
@@ -233,6 +240,7 @@ p {
 
 
 
+/* portfolio section */
 .portfolio {
   position: absolute;
   /* top: 40%; */
@@ -271,6 +279,9 @@ p {
   width: 60%;
   margin: 0 auto;
 }
+
+
+/* display grid property */
 
 .tableimg {
 
@@ -315,6 +326,8 @@ p {
   background-color: rgb(170, 163, 163);
 }
 
+/* insert bg image 3 */
+
 .bgimg_3 {
   background: url("../src/image.jpg");
   background-position: center center;
@@ -327,6 +340,7 @@ p {
   opacity: 60%;
 }
 
+/* bg image text positioning */
 .contact {
   position: absolute;
   left: 30%;
@@ -338,6 +352,7 @@ p {
 
 }
 
+/* this is contact form */
 .work {
   display: flex;
   align-items: center;
@@ -425,6 +440,8 @@ input::placeholder {
   cursor: pointer;
 
 }
+
+/* animation property */
 
 .message_buttons{
   animation: messsagebtn 1s linear 500ms infinite;
